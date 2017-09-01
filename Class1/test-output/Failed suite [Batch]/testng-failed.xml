@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Batch]]">
+  <test name="ChromeBrowserExecutions(failed)(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="practice1.SingleDropdown">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="SingleDropDown"/>
+        </methods>
+      </class> <!-- practice1.SingleDropdown -->
+    </classes>
+  </test> <!-- ChromeBrowserExecutions(failed)(failed) -->
+  <test name="FirefoxBrowserExecutions(failed)(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="practice1.SingleDropdown">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="SingleDropDown"/>
+        </methods>
+      </class> <!-- practice1.SingleDropdown -->
+      <class name="practice1.MouseOperations">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="slider"/>
+        </methods>
+      </class> <!-- practice1.MouseOperations -->
+    </classes>
+  </test> <!-- FirefoxBrowserExecutions(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Batch]] -->

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [VmwareSuite]" parallel="tests">
+  <test name="ChromeBrowserExecutions(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="practice1.SingleDropdown">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="singleDropDown"/>
+        </methods>
+      </class> <!-- practice1.SingleDropdown -->
+      <class name="practice1.MouseOperations">
+        <methods>
+          <include name="tearDown"/>
+          <include name="MoveToelement"/>
+          <include name="setup"/>
+          <include name="DragAnddrop"/>
+          <include name="slider"/>
+          <include name="Browserslider"/>
+        </methods>
+      </class> <!-- practice1.MouseOperations -->
+    </classes>
+  </test> <!-- ChromeBrowserExecutions(failed) -->
+  <test name="FirefoxBrowserExecutions(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="practice1.SingleDropdown">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="singleDropDown"/>
+        </methods>
+      </class> <!-- practice1.SingleDropdown -->
+      <class name="practice1.MouseOperations">
+        <methods>
+          <include name="tearDown"/>
+          <include name="MoveToelement"/>
+          <include name="setup"/>
+          <include name="DragAnddrop"/>
+          <include name="slider"/>
+          <include name="Browserslider"/>
+        </methods>
+      </class> <!-- practice1.MouseOperations -->
+    </classes>
+  </test> <!-- FirefoxBrowserExecutions(failed) -->
+</suite> <!-- Failed suite [VmwareSuite] -->

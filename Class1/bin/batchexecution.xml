@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Batch" >
+
+  <test name="ChromeBrowserExecutions" >
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+       
+       <class name="practice1.SingleDropdown1" />
+       <class name="practice1.MouseOperations1" />
+    </classes>
+  </test>
+ 
+ 
+  <test name="FirefoxBrowserExecutions">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+    
+       <class name="practice1.SingleDropdown1" />
+       <class name="practice1.MouseOperations1" />
+    </classes>
+  </test>
+  
+</suite>
